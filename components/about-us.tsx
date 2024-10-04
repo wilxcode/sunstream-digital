@@ -22,6 +22,10 @@ const AboutUs = () => {
         <Image
           src={'/about_image.svg'}
           alt="About Us Image"
+          style={{
+            width: 'auto',
+            height: 'auto',
+          }}
           width={498}
           height={334}
           className="relative"

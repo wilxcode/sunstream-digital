@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 const logos = [
   {
     name: 'Skoda',
@@ -53,10 +55,16 @@ const AnimatedLogoCloud = () => {
                 className="flex shrink-0 animate-logo-cloud flex-row justify-around gap-16"
               >
                 {logos.map((logo, key) => (
-                  <img
+                  <Image
                     key={key}
                     src={logo.url}
-                    className="h-10 w-28 px-2"
+                    style={{
+                      width: 'auto',
+                      height: 'auto',
+                    }}
+                    width={112}
+                    height={40}
+                    className="px-2"
                     alt={`${logo.name}`}
                   />
                 ))}

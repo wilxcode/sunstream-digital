@@ -33,6 +33,10 @@ const Hero = () => {
       <Image
         src={'/hero_image.svg'}
         alt="hero image"
+        style={{
+          width: 'auto',
+          height: 'auto',
+        }}
         width={392}
         height={426}
         priority
