@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import { Card, CardContent, CardHeader, CardTitle } from './ui/card'
-import AnimatedLogoCloud from './partners-logo'
+import AnimatedLogoCloud from './partners-logos'
 
 const Partners = () => {
   return (
