@@ -55,13 +55,15 @@ const OurServices = () => {
         </div>
         <div className="flex flex-col gap-8 p-6 flex-1">
           <div className="flex flex-col gap-2">
-            <div className="flex gap-4">
-              <Image
+            <div className="flex gap-4 items-center">
+              <div className="bg-primary p-2 rounded-lg">
+                <Image
                 src={'/our_services_svg_1.svg'}
                 alt=""
-                width={40}
-                height={40}
+                width={20}
+                height={20}
               />
+              </div>
               <h3 className="text-2xl text-black">
                 Data-Driven Digital Marketing
               </h3>
@@ -69,37 +71,43 @@ const OurServices = () => {
             <p>{`Using the power of analytics and AI, we tailor campaigns that deliver measurable results and reach your target audience effectively.`}</p>
           </div>
           <div className="flex flex-col gap-2">
-            <div className="flex gap-4">
-              <Image
+            <div className="flex gap-4 items-center">
+              <div className="bg-primary p-2 rounded-lg">
+                <Image
                 src={'/our_services_svg_2.svg'}
                 alt=""
-                width={40}
-                height={40}
+                width={20}
+                height={20}
               />
+              </div>
               <h3 className="text-2xl text-black">Creative Content Creation</h3>
             </div>
             <p>{`From video production to compelling copy, our creative team ensures that your brand message resonates across all platforms.`}</p>
           </div>
           <div className="flex flex-col gap-2">
-            <div className="flex gap-4">
-              <Image
+            <div className="flex gap-4 items-center">
+              <div className="bg-primary p-2 rounded-lg">
+                <Image
                 src={'/our_services_svg_3.svg'}
                 alt=""
-                width={40}
-                height={40}
+                width={20}
+                height={20}
               />
+              </div>
               <h3 className="text-2xl text-black">SEO & SEM Optimization</h3>
             </div>
             <p>{`Boost your visibility with search engine strategies that put your business in front of the right people, at the right time.`}</p>
           </div>
           <div className="flex flex-col gap-2">
-            <div className="flex gap-4">
-              <Image
+            <div className="flex gap-4 items-center">
+              <div className="bg-primary p-2 rounded-lg">
+                <Image
                 src={'/our_services_svg_4.svg'}
                 alt=""
-                width={40}
-                height={40}
+                width={20}
+                height={20}
               />
+              </div>
               <h3 className="text-2xl text-black">Social Media Management</h3>
             </div>
             <p>{`Engage your audience with targeted social media campaigns designed to grow your brand’s community and influence.`}</p>

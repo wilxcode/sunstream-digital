@@ -21,15 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${poppins.variable} antialiased`}>
-        {/* {children} */}
-        <div className="hidden xl:block">{children}</div>
-        <div className="xl:hidden h-screen bg-muted flex items-center justify-center">
-          <span className="px-4 sm:px-0">
-            Responsive not ready yet 🤧. Continue on your pc
-          </span>
-        </div>
-      </body>
+      <body className={`${poppins.variable} antialiased`}>{children}</body>
     </html>
   )
 }
