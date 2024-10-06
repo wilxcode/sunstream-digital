@@ -58,11 +58,11 @@ const OurServices = () => {
             <div className="flex gap-4 items-center">
               <div className="bg-primary p-2 rounded-lg">
                 <Image
-                src={'/our_services_svg_1.svg'}
-                alt=""
-                width={20}
-                height={20}
-              />
+                  src={'/our_services_svg_1.svg'}
+                  alt=""
+                  width={20}
+                  height={20}
+                />
               </div>
               <h3 className="text-2xl text-black">
                 Data-Driven Digital Marketing
@@ -74,11 +74,11 @@ const OurServices = () => {
             <div className="flex gap-4 items-center">
               <div className="bg-primary p-2 rounded-lg">
                 <Image
-                src={'/our_services_svg_2.svg'}
-                alt=""
-                width={20}
-                height={20}
-              />
+                  src={'/our_services_svg_2.svg'}
+                  alt=""
+                  width={20}
+                  height={20}
+                />
               </div>
               <h3 className="text-2xl text-black">Creative Content Creation</h3>
             </div>
@@ -88,11 +88,11 @@ const OurServices = () => {
             <div className="flex gap-4 items-center">
               <div className="bg-primary p-2 rounded-lg">
                 <Image
-                src={'/our_services_svg_3.svg'}
-                alt=""
-                width={20}
-                height={20}
-              />
+                  src={'/our_services_svg_3.svg'}
+                  alt=""
+                  width={20}
+                  height={20}
+                />
               </div>
               <h3 className="text-2xl text-black">SEO & SEM Optimization</h3>
             </div>
@@ -102,11 +102,11 @@ const OurServices = () => {
             <div className="flex gap-4 items-center">
               <div className="bg-primary p-2 rounded-lg">
                 <Image
-                src={'/our_services_svg_4.svg'}
-                alt=""
-                width={20}
-                height={20}
-              />
+                  src={'/our_services_svg_4.svg'}
+                  alt=""
+                  width={20}
+                  height={20}
+                />
               </div>
               <h3 className="text-2xl text-black">Social Media Management</h3>
             </div>
