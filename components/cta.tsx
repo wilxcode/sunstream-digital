@@ -3,12 +3,12 @@ import { Button } from './ui/button'
 
 const CTA = () => {
   return (
-    <div className="flex items-center justify-between gap-28 max-w-screen-xl mx-auto px-4 sm:px-6 md:px-8">
-      <div className="flex flex-col items-start gap-16 flex-1">
+    <div className="mx-auto flex max-w-screen-xl flex-col items-start justify-between gap-12 px-4 *:flex-1 sm:flex-row sm:items-center sm:px-6 md:px-8 lg:gap-16 xl:gap-28">
+      <div className="flex max-w-[37.125rem] flex-col items-start gap-8">
         <div className="flex flex-col gap-8">
           <div>
-            <span className="text-sm text-secondary font-bold">BRIGHT</span>
-            <h2 className="text-6xl font-semibold text-black">
+            <span className="text-sm font-bold text-secondary">BRIGHT</span>
+            <h2 className="lg:5xl text-2xl font-semibold tracking-tight text-black sm:text-3xl md:text-4xl xl:text-6xl">
               Ready to Light
               <br /> Up Your Marketing
               <span className="text-primary">?</span>
@@ -22,7 +22,14 @@ const CTA = () => {
           Book a Free Consultation
         </Button>
       </div>
-      <Image src={'/cta_image.jpg'} alt="CTA image" width={392} height={514} />
+      <div>
+        <Image
+          src={'/cta_image.jpg'}
+          alt="CTA image"
+          width={392}
+          height={514}
+        />
+      </div>
     </div>
   )
 }

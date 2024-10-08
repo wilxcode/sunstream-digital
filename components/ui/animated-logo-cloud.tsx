@@ -38,7 +38,7 @@ const logos = [
 
 const AnimatedLogoCloud = () => {
   return (
-    <div className="w-full py-12 max-w-screen-xl mx-auto px-4 sm:px-6 md:px-8">
+    <div className="w-full py-8 md:py-10 xl:py-12 max-w-screen-xl mx-auto px-4 sm:px-6 md:px-8">
       <div className="mx-auto w-full px-4 md:px-8">
         <div
           className="group relative mt-6 flex gap-6 overflow-hidden p-2"

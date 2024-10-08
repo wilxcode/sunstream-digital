@@ -23,32 +23,32 @@ const Footer = () => {
   const scrollToTop = useScrollToTop()
 
   return (
-    <div className="bg-muted *:py-36 *:max-w-screen-xl *:mx-auto *:px-4 *:sm:px-6 *:md:px-8">
-      <div className="flex justify-between">
-        <div className="flex items-start gap-12">
+    <div className="bg-muted *:mx-auto *:max-w-screen-xl *:px-4 *:py-24 *:sm:px-6 *:sm:py-28 *:md:px-8 *:md:py-32 xl:*:py-36">
+      <div className="flex flex-col justify-between gap-y-16 lg:flex-row lg:gap-y-0">
+        <div className="flex flex-col items-start gap-12 sm:flex-row">
           <Logo type="image" />
           <div className="flex flex-col gap-16 pt-2">
             <p className="text-lg">
               1234 Market St, Suite 500, <br /> San Francisco, CA
             </p>
             <div className="flex flex-col gap-4">
-              <span className="underline underline-offset-4 decoration-primary">
+              <span className="underline decoration-primary underline-offset-4">
                 +1-800-123-4567
               </span>
-              <span className="underline underline-offset-4 decoration-primary">
+              <span className="underline decoration-primary underline-offset-4">
                 info@sunstreamdigital.com
               </span>
             </div>
           </div>
         </div>
         <div className="flex flex-col gap-28 pt-2">
-          <div className="flex gap-36">
+          <div className="flex flex-col gap-36 gap-y-8 sm:flex-row">
             <div className="flex flex-col gap-4">
               {links.map((link) => (
                 <Link
                   key={link.name}
                   href={link.href}
-                  className="hover:underline underline-offset-4"
+                  className="underline-offset-4 hover:underline"
                 >
                   {link.name}
                 </Link>
@@ -59,7 +59,7 @@ const Footer = () => {
                 <Link
                   key={link.name}
                   href={link.href}
-                  className="hover:underline underline-offset-4"
+                  className="underline-offset-4 hover:underline"
                 >
                   {link.name}
                 </Link>

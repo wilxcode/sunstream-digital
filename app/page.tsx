@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <main>
       <Header />
-      <div className="*:py-20">
+      <div className="*:py-14 md:py-16 xl:*:py-20">
         <Hero />
         <AboutUs />
         <Stats />

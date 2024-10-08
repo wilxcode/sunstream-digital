@@ -3,7 +3,7 @@ import Image from 'next/image'
 const AboutUs = () => {
   return (
     <div
-      className="bg-muted *:py-20 *:max-w-screen-xl *:mx-auto *:px-4 *:sm:px-6 *:md:px-8"
+      className="bg-muted *:max-w-screen-xl *:mx-auto *:px-4 *:sm:px-6 *:md:px-8"
       id="about"
     >
       <div className="flex flex-col justify-between gap-12 lg:flex-row lg:gap-12">
@@ -28,8 +28,8 @@ const AboutUs = () => {
               height: 'auto',
             }}
             width={498}
-            height={334}
-            className="relative"
+            height={334}        
+            className="relative w-full h-auto xl:max-w-[498px]"
           />
         </div>
       </div>
