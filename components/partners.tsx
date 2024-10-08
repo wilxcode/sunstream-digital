@@ -8,7 +8,7 @@ const Partners = () => {
       className="overflow-hidden bg-muted *:mx-auto *:max-w-screen-xl *:px-4 *:sm:px-6 *:md:px-8"
       id="partners"
     >
-      <div className="flex flex-col gap-16">
+      <div className="flex flex-col gap-16 pb-12">
         <div className="flex flex-col gap-8 self-center *:text-center">
           <div>
             <span className="text-sm font-bold text-secondary">CLIENT</span>

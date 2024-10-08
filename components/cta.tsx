@@ -3,7 +3,7 @@ import { Button } from './ui/button'
 
 const CTA = () => {
   return (
-    <div className="mx-auto flex max-w-screen-xl flex-col items-start justify-between gap-12 px-4 *:flex-1 sm:flex-row sm:items-center sm:px-6 md:px-8 lg:gap-16 xl:gap-28">
+    <div className="mx-auto flex max-w-screen-xl flex-col items-start justify-between gap-4 px-4 sm:flex-row sm:items-center sm:px-6 md:px-8 lg:gap-12 xl:gap-28">
       <div className="flex max-w-[37.125rem] flex-col items-start gap-8">
         <div className="flex flex-col gap-8">
           <div>
@@ -28,6 +28,7 @@ const CTA = () => {
           alt="CTA image"
           width={392}
           height={514}
+          className='w-full h-auto max-w-[392px]'
         />
       </div>
     </div>
