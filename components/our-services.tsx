@@ -44,7 +44,7 @@ const OurServices = () => {
             </div>
             <div className="size-fit">
               <Image
-                src={'/our_services_img_4.svg'}
+                src={'/our_services_img_4.png'}
                 alt="About Us Image"
                 width={210}
                 height={322}
