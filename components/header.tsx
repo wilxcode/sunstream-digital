@@ -5,7 +5,7 @@ import Logo from './logo'
 import { Button } from './ui/button'
 import { Menu, X } from 'lucide-react'
 
-import { useState } from 'react'
+import { Dispatch, SetStateAction, useState } from 'react'
 
 const links = [
   { name: 'Home', href: '/#hero' },
@@ -14,14 +14,19 @@ const links = [
   { name: 'Projects', href: '#' },
 ]
 
-const HeaderNav = () => {
+type HeaderNavProps = {
+  setIsMenuOpen?: Dispatch<SetStateAction<boolean>>
+}
+
+const HeaderNav = (props: HeaderNavProps) => {
   return (
-    <nav className="flex flex-col md:flex-row gap-8 items-start md:items-center">
+    <nav className="flex flex-col items-start gap-8 md:flex-row md:items-center">
       {links.map((link) => (
         <Link
           key={link.name}
           href={link.href}
-          className="hover:underline underline-offset-4"
+          className="underline-offset-4 hover:underline"
+          onClick={() => props.setIsMenuOpen?.(false)}
         >
           {link.name}
         </Link>
@@ -44,17 +49,17 @@ const MenuMobile = () => {
       </div>
       <div
         data-open={isMenuOpen}
-        className="fixed inset-0 z-10 p-8 bg-background transition-transform duration-300 ease-in-out data-[open=true]:translate-x-0 data-[open=false]:translate-x-full"
+        className="fixed inset-0 z-10 bg-background p-8 transition-transform duration-300 ease-in-out data-[open=false]:translate-x-full data-[open=true]:translate-x-0"
       >
         <div
-          className="absolute top-4 right-4 cursor-pointer"
+          className="absolute right-4 top-4 cursor-pointer"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
           <X size={24} />
           <span className="sr-only">Close</span>
         </div>
         <div className="pt-12">
-          <HeaderNav />
+          <HeaderNav setIsMenuOpen={setIsMenuOpen} />
         </div>
       </div>
     </>
@@ -63,12 +68,12 @@ const MenuMobile = () => {
 
 const Header = () => {
   return (
-    <header className="py-5 flex justify-between items-center max-w-screen-xl mx-auto px-4 sm:px-6 md:px-8">
+    <header className="mx-auto flex max-w-screen-xl items-center justify-between px-4 py-5 sm:px-6 md:px-8">
       <Logo type="link" />
       <div className="hidden md:block">
         <HeaderNav />
       </div>
-      <div className="flex gap-4 items-center">
+      <div className="flex items-center gap-4">
         <Button variant={'outline'}>Contact Us</Button>
         <div className="md:hidden">
           <MenuMobile />

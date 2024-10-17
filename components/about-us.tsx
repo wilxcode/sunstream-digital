@@ -21,7 +21,7 @@ const AboutUs = () => {
         </div>
         <div>
           <Image
-            src={'/about_image.svg'}
+            src={'/about_image.png'}
             alt="About Us Image"
             style={{
               width: 'auto',
